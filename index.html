@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="uz">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Oshxon</title>
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <header>
+      <div class="container">
+        <h1>Oshxona</h1>
+        <p>Taomlar, ichimliklar va shirinliklar</p>
+      </div>
+    </header>
+
+    <div class="menu">
+      <div class="container">
+        <h2>Taomlar</h2>
+        <div class="food-items">
+          <div class="food-item">
+            <img src="img/Palov.jpg" alt="Palov" />
+            <button onclick="order('Palov')">Palov - 25,000 so'm</button>
+          </div>
+          <div class="food-item">
+            <img src="img/Lag'mon.jpeg" alt="Lag'mon" />
+            <button onclick="order('Lagmon')">Lag'mon - 20,000 so'm</button>
+          </div>
+          <!-- Boshqa taomlar -->
+        </div>
+      </div>
+    </div>
+
+    <div class="menu">
+      <div class="container">
+        <h2>Ichimliklar</h2>
+        <div class="food-items">
+          <div class="food-item">
+            <img src="img/Kola.png" alt="Kola" />
+            <button onclick="order('Kola')">Kola - 5,000 so'm</button>
+          </div>
+          <div class="food-item">
+            <img src="img/Ayran.jpeg" alt="Ayran" />
+            <button onclick="order('Ayran')">Ayran - 3,000 so'm</button>
+          </div>
+          <!-- Boshqa ichimliklar -->
+        </div>
+      </div>
+    </div>
+
+    <div class="order">
+      <div class="container">
+        <h2>Savatcha</h2>
+        <ul id="order-list"></ul>
+        <p id="total">Jami: 0 so'm</p>
+        <button onclick="calculateTotal()">Buyurtmani Hisoblash</button>
+      </div>
+    </div>
+
+    <script src="main.js"></script>
+  </body>
+</html>
