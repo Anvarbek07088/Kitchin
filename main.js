@@ -16,8 +16,17 @@ function updateOrderList() {
     });
 }
 
+function ByurtmaOtmen(){
+    const listElement = document.getElementById('order-list');
+    listElement.innerHTML = '';
+    const totalElement = document.getElementById('total');
+    totalElement.textContent = 'Jami: ' + 0 + ' so\'m';
+    // totalPrice=0
+    orderList=[]
+}
+
 function calculateTotal() {
-    totalPrice = 0;
+    // totalPrice = 0;
     orderList.forEach(item => {
         switch(item) {
             case 'Palov':
